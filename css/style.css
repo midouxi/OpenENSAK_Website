@@ -1,0 +1,660 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  pour annuler user agent stylesheet*/
+html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, form, img, table, dl, dt, dd, img {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+::-moz-selection { color: white;  background: #461e5a; }
+::selection      { color: white;  background: #461e5a; } 
+
+body {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.428571429;
+	color: #2c3e50;
+	width: 1349px;
+	background-color: white;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+}
+
+a {
+	text-decoration: none;
+}
+
+:-moz-any-link:focus {
+  outline: none;
+}
+
+a:link, a:visited, a:focus, a:hover {
+	-webkit-transition: all 0.8s ease-out;
+	-moz-transition: all 0.8s ease-out;
+	-ms-transition: all 0.8s ease-out;
+	-o-transition: all 0.8s ease-out;
+	outline: none;
+}
+/********************* nav bare ********************************/
+
+.navbar-default {
+	background-image: url(../images/background.png);
+	border-color: #5e2746;
+}
+#navbar-main li a {
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+#navbar-main li:hover a,
+#navbar-main li a:focus {
+	color: #20263e;
+	background-color: white;
+}
+.navbar-header > a > img {
+	width: 60%;
+	height: 60%;
+}
+ul.navbar-nav {
+	margin-top: 50px;
+	font-size: 20px;
+	line-height: 22px;
+}
+
+@media (max-width: 768px) {
+  ul.navbar-nav {
+	margin-top: 5px;
+	}
+	.support-caption,
+	.carousel-indicators {
+		display: none;
+	}
+}
+
+.acceuil {
+	text-align: center;
+	margin-top: 50px;
+	color: #461e5a;
+}
+.acceuil p {
+	color: #2a2a2a;
+	font-size: 16px;
+}
+.conference {
+	margin-top: 50px;
+	color: #461e5a;
+	text-align: center;
+}
+.conference p {
+	color: #2a2a2a;
+	font-size: 16px;
+}
+.conference .inviter {
+	text-align: center;
+	margin: 20px 0px;
+}
+.conference .inviter img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #461e5a;
+	-webkit-transition: all 0.8s ease-out;
+	-moz-transition: all 0.8s ease-out;
+	-ms-transition: all 0.8s ease-out;
+	-o-transition: all 0.8s ease-out;
+	filter: grayscale(0.5) blur(10px);
+}
+.conference .inviter img:hover {
+	border-color: #202D3B;
+	border-radius: 5px;
+}
+.conference .inviter h3:hover {
+	color: #202D3B;
+}
+
+
+.competition {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #461e5a;
+}
+.competition p {
+	color: #2a2a2a;
+	font-size: 16px;
+}
+.sponsore {
+	margin-top: 50px;
+	color: #461e5a;
+	text-align: center;
+}
+.sponsore p {
+	color: #828282;
+	font-size: 16px;
+}
+
+
+.agenda {
+	margin-top: 50px;
+	color: #461e5a;
+	text-align: center;
+}
+.agenda p {
+	color: #2a2a2a;
+	font-size: 16px;
+}
+/********************* competition style ************************/
+.sidebar-menu {
+	margin-top: 20px;
+  	width: 100%;
+}
+
+.sidebar-menu li{
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background: #461e5a;
+  margin-bottom: 10px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.sidebar-menu li:last-child{
+    margin-bottom: 0px;
+}
+.sidebar-menu li a{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    position: relative;
+}
+.sidebar-menu .glyphicon {
+  font-size: 50px;
+  line-height: 80px;
+  position: absolute;
+  width: 50px;
+  left: 10px;
+  text-align: center;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear; 
+}
+
+.menu-content {
+    position: absolute;
+    left: 80px;
+    width: 450px;
+    height: 50px;
+    font-size: 25px;
+    padding-top: 25px;
+}
+.sidebar-menu li:hover{
+    background-color: #202D3B;
+}
+.sidebar-menu li:hover span.badge {
+  background-color: #461e5a;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear; 
+}
+.sidebar-menu li:hover .glyphicon {
+    color: #fff;
+    font-size: 80px;
+    opacity: 0.4;
+    left: 0px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.sidebar-menu li:hover .menu-content {
+  color: #fff;
+}
+
+
+/****************** images style *******************************/
+.header-image img {
+	width: 100%;
+	height: auto;
+}
+
+/********************* agenda style *****************************/
+.day .day-part h1 {
+	margin: 0px 0px;
+	margin-top: 10px;
+	padding-top: 30px;
+	padding-bottom: 29px;
+	text-align: center;
+	border-radius: 5px;
+	background-image: url(../images/background.png);
+	color: white;
+	background-size: auto auto;
+}
+
+.day .day-agenda {
+	text-align: center;
+	height: 120px;
+}
+
+@media (max-width: 992px) {
+	.day .day-part h1 {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.day .day-agenda {
+	text-align: center;
+	height: 240px;
+}
+}
+.day legend {
+	text-align: center;
+	font-size: 25px;
+	line-height: 28px;
+	padding: 20px 0px;
+	background-color: #131313;
+	color: #ffffff;
+	border-radius: 5px;
+	border: none;
+}
+.day .element {
+	text-align: center;
+	width: 60px;
+	height: auto;
+	float: left;
+	margin: 0px 6px;
+}
+.day .element h4{
+	padding: 5px;
+	color: white;
+	border-radius: 5px;
+}
+.day .element a {
+	height: auto;
+	width: 100%;
+	padding: 0px 0px;
+	border-radius: 5px;
+}
+.day .element a img {
+	width: inherit;
+	height: auto;
+
+}
+
+.day .accueil a,
+.day .accueil h4 {
+	background-color: #95a5a6;
+}
+
+.day .comit-talk a,
+.day .comit-talk h4 {
+	background-color: #6cc37e;
+}
+.day .intervention a,
+.day .intervention h4 {
+	background-color: #d7323f;
+}
+
+.day .cafe a,
+.day .cafe h4 {
+	background-color: #e67e22;
+}
+
+.day .atelier a,
+.day .atelier h4 {
+	background-color: #6d6d6d;
+}
+
+
+.day .dejeuner a,
+.day .dejeuner h4 {
+	background-color: #19a58c;
+}
+
+.day .compt a,
+.day .compt h4 {
+	background-color: #1e7ab5;
+}
+
+.day .confirence a,
+.day .confirence h4 {
+	background-color: #813f9f;
+}
+
+.day .prix a,
+.day .prix h4 {
+	background-color: #f39c12;
+}
+
+.day .buffet a,
+.day .buffet h4 {
+	background-color: #0db896;
+}
+
+
+.day .start a,
+.day .start h4 {
+	background-color: #27ae60;
+}
+/*********************** modal style **********************/
+
+.modal-header-accueil {
+	background-color: #95a5a6;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-accueil h3 {
+	color: #95a5a6;
+}
+.modal-header-comit-talk {
+	background-color: #6cc37e;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-comit-talk  h3 {
+	color: #6cc37e;
+}
+
+.modal-header-intervention {
+	background-color: #d7323f;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-intervention h3 {
+	color: #d7323f;
+}
+
+.modal-header-cafe {
+	background-color: #e67e22;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-cafe h3 {
+	color: #e67e22;
+}
+
+.modal-header-atelier {
+	background-color: #6d6d6d;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-atelier .sidebar-menu li{
+    background-color: #6d6d6d;
+}
+.modal-body-atelier .sidebar-menu li:hover{
+    background-color: #313131;
+}
+.modal-body-atelier h3 {
+	color: #6d6d6d;
+}
+
+.modal-header-dejeuner {
+	background-color: #19a58c;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-dejeuner h3 {
+	color: #19a58c;
+}
+
+.modal-header-compt {
+	background-color: #1e7ab5;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-compt h3 {
+	color: #1e7ab5;
+}
+
+.modal-header-confirence {
+	background-color: #813f9f;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-confirence h3 {
+	color: #813f9f;
+}
+
+.modal-header-prix {
+	background-color: #f39c12;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-prix h3 {
+	color: #f39c12;
+}
+
+.modal-header-buffet {
+	background-color: #0db896;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-buffet h3 {
+	color: #0db896;
+}
+
+.modal-header-start {
+	background-color: #27ae60;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-start h3 {
+	color: #27ae60;
+}
+
+
+/******************* slide style ***********************/
+
+.first-carousel {
+	margin-top: -21px;
+}
+@media (max-width: 768px) {
+	.carousel h1,
+	.carousel h3,
+	.carousel h4 {
+	font-size: 90%;
+	}
+}
+.btn-movie {
+	color: white;
+	text-align: center;
+	padding: 10px 30px;
+	background-color: #5e2746;
+	-webkit-transition: all 0.8s ease-out;
+	-moz-transition: all 0.8s ease-out;
+	-ms-transition: all 0.8s ease-out;
+	-o-transition: all 0.8s ease-out;
+}
+
+.btn-movie:hover {
+	background-color: #461e5a;
+	color: #ffffff;
+}
+
+.modal-header-vedio-data {
+	background-color: #461e5a;
+	color:white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.modal-body-vedio-data .video {
+	width: 100%;
+	height: 360px;
+	border: 2px solid #461e5a;
+}
+
+
+/******************* back to the top style **************/
+
+#back-top {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: #5e2746;
+	border-radius: 50%;
+	cursor: pointer;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 570px;
+	left: 1270px;
+}
+#back-top div{
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#back-top div:hover{
+	background-color: #461e5a;
+	border-radius: 50%;
+}
+
+/***************** agenda image style **************/
+
+.element a img {
+    -webkit-transition-duration: 1.0s;
+    -moz-transition-duration: 1.0s;
+    -o-transition-duration: 1.0s;
+    transition-duration: 1.0s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.element a:hover img {
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    .scale(0.8);
+}
+
+.day h2 {
+	text-align: center;
+	color: #363636;
+}
+.day {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+
+/******************* footer style ******************************/
+.footer {
+	width: 100%;
+	background-image: url(../images/background.png);
+}
+.footer .sociale {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.footer .logos {
+	text-align: center;
+}
+.footer .logos img {
+	width: 200px;
+	height: auto;
+}
+.footer .sociale img {
+	width: 80px;
+	height: 80px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+.footer .sociale a:hover img {
+	background-color: #121212;
+	border-radius: 50%;
+}
+
+.footer .menu-footer {
+	text-align: center;
+	font-size: 18px;
+	line-height: 60px;
+	padding: 20px 0px;
+	margin-bottom: 20px;
+}
+.footer .menu-footer a {
+	color: white;
+	padding: 10px 20px;
+	margin: 0px 10px;
+	border-bottom: 2px solid #ffffff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+
+.footer .menu-footer a:hover {
+	color: #20263e;
+	background-color: white;
+}
+
+.footer p {
+	text-align: center;
+	color: white;
+}
+
+/********************* sponsors style ************************/
+.sponsore {
+	margin-bottom: 30px;
+}
+
+.sponsore img {
+	width: 100%;
+	height: 100%;
+}
+.sponsore h1 {
+	margin-top: 5px;
+}
+.sponsore h3 {
+	color: #333333;
+}
+
+.sponsore img.big-spons {
+	width: 300px;
+	height: 300px;
+}
+
+.second-carousel {
+	border-top: 3px solid #E7EBED;
+	border-bottom: 3px solid #E7EBED;
+}
+
+.sponsore .spons-autre img {
+	width: 200px;
+	height: auto;
+	margin: 0px 20px;
+}

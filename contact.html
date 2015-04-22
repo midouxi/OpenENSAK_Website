@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Open Source ENSAK</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/contact-staff.css" />
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="map/prettymaps.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header-bar">
+      <a href="index.html" title="Accueil"><img src="images/contact_logo.png"></a>
+    </div>
+    <div class="container">
+       <div class="row contact-content">
+            <h1>Contactez-Nous</h1>
+            <form class="bs-example form-horizontal col-md-6">
+                <fieldset>
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <input class="form-control" id="inputUser" placeholder="Nom" type="text" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <input class="form-control" id="inputEmail" placeholder="Email" type="email" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <input class="form-control" id="inputSujet" placeholder="Sujet" type="text" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <textarea class="form-control" placeholder="Message" rows="3" id="textArea" style="margin: 0px -0.171875px 0px 0px; max-width: 392px; max-height: 210px; min-width: 100%; min-height: 210px;" required></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-envoyer">Envoyer</button>
+                </fieldset>
+              </form>
+
+
+              <div class="col-md-6 content">
+                  <h3 class="first-h3">Adresse :</h3><p>École Nationale des Sciences Appliquées, Bd Béni Amir, BP 77, Khouribga - Maroc.</p>
+                  <h3 class="first-h3">Télephone :</h3><p> +212 5 23 49 23 35</p><p> +212 6 18 53 43 72</p>
+                  <h3 class="first-h3">FAX :</h3><p> +212-523492339</p>
+                  <h3 class="first-h3">E-mail :</h3><p> openensak@gmail.com</p>
+                  <h3 class="first-h3">Facebook :</h3><p> Open Source ENSA-Khouribga</p>
+                  <h3 class="first-h3">Twitter :</h3><p> @OpenSourceENSAK</p>
+              </div>
+       </div>
+    </div>
+
+          
+    <div style="width: 100%; height: 500px;" class="map-canvas"></div>
+    
+
+    <div id="back-top">
+      <div title="to the top"><img src="images/back-to-top.png"/></div>
+    </div>
+
+<div class="footer">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12 sociale">
+                <a href="https://www.facebook.com/OpenSourceENSAKH" target="_blank"><img src="images/facebook.png"></a>
+                <a href="https://twitter.com/OpenSourceENSAK" target="_blank"><img src="images/twitter.png"></a>
+                <a href="http://www.flickr.com/photos/114881585@N07/" target="_blank"><img src="images/flickr.png"></a>
+              </div>
+              <div class="col-md-12 menu-footer">
+                <div class="col-md-2"></div>
+                <div class="col-md-2"><a target="_blank" href="http://www.flickr.com/photos/114881585@N07/">Galerie</a></div>
+                <div class="col-md-2"><a target="_blank" href="http://openensakh.eventbrite.com">Inscription</a></div>
+                <div class="col-md-2"><a href="contact.html">Contact</a></div>
+                <div class="col-md-2"><a href="staff.html">Staff</a></div>
+                <div class="col-md-2"></div>
+              </div>
+              <div class="log-lg-12 logos">
+                <img src="images/ensa-logo.png">
+                <img src="images/uh-logo.png">
+                <img src="images/aei-logo.png">
+              </div>
+              <div class="col-md-12">
+                <p>© 2014 | Open Source ENSA Khouribga, 3ème Edition.</p>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/back-to-top.js"></script>
+    <script>
+        $(function(){
+            //default
+            $('.map-canvas').prettyMaps({
+                address: 'ENSAK,khouribga',
+                    image: 'map/map-icon.png',
+                    hue: '#5e2746',
+                    saturation: -50,
+                    zoom: 17,
+                    panControl: true,
+                    zoomControl: true,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    overviewMapControl: true,
+                    scrollwheel: false,
+            });   
+        });
+    </script>
+  
+</body>
+</html>
